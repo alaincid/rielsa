@@ -1,0 +1,398 @@
+@media (max-width: 768px) {
+    .login-form {
+        width: 320px !important;
+        margin: 100px auto !important;
+
+    }
+}
+
+.login-form {
+        min-width: 340px;
+        width: 450px;
+    	margin: 100px auto;
+    }
+    .login-form form {
+    	margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 45px;
+    }
+    .login-form .hint-text {
+		color: #777;
+		padding-bottom: 15px;
+		text-align: center;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .login-btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .or-seperator {
+        margin: 20px 0 10px;
+        text-align: center;
+        border-top: 1px solid #ccc;
+    }
+    .or-seperator i {
+        padding: 0 10px;
+        background: #f7f7f7;
+        position: relative;
+        top: -11px;
+        z-index: 1;
+    }
+    .social-btn .btn {
+        margin: 10px 0;
+        font-size: 15px;
+        text-align: left; 
+        line-height: 24px;       
+    }
+	.social-btn .btn i {
+		float: left;
+		margin: 4px 15px  0 5px;
+        min-width: 15px;
+	}
+	.input-group-addon .fa{
+		font-size: 18px;
+    }
+    
+    .rememberMe{
+        margin-bottom: 20px !important;
+        margin-top: 5px !important;
+
+    }
+
+table.dataTable thead .sorting:before{
+    font-family: 'Glyphicons Halflings' !important;
+}
+
+table.dataTable thead .sorting_asc:before{
+    font-family: 'Glyphicons Halflings' !important;
+}
+
+.even{
+    background-color: white !important;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+div#clientes_table_info{
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+@media (max-width: 767px){
+    .pagination{
+        justify-content: center !important;
+    }
+}
+
+i.fas.fa-circle.text-danger{
+    color: #F54459!important; 
+    opacity: .8 !important;
+    position: absolute;
+    right: 1rem !important;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+i.fas.fa-circle.text-success{
+    color: #5fc27e!important;
+    opacity: .8 !important;
+    position: absolute;
+    right: 1rem !important;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.usuarios-link{
+    color: #E9ECEC !important;
+
+}
+
+.alert {
+    position: relative !important;
+    padding: .75rem 1.25rem !important;
+    margin-bottom: 1rem !important;
+    border: 1px solid transparent !important;
+    border-radius: .25rem !important;
+}
+
+
+.message-wrapper{
+    border: 1px solid #dddddd;
+    overflow-y: auto;
+}
+
+.user{
+    position: relative !important;
+}
+
+.pending{
+    position: absolute;
+    right: 3.5rem !important;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #559df7;
+    margin: 0;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 5px;
+    color: #333b4b;
+    font-size: 12px;
+}
+
+.messages{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.message-wrapper{
+    padding: 10px;
+    height: 462px;
+    background: #eeeeee;
+}
+
+.messages .message{
+    margin-bottom: 15px;
+}
+
+.messages .message:last-child{
+    margin-bottom: 0px;
+}
+
+
+
+@media (max-width: 768px) {
+    .received, .sent{
+        width: 65% !important;
+    }
+}
+
+
+.received, .sent{
+    width: 45%;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+
+
+.received{
+    background: #ffffff;
+}
+
+.sent{
+    background: #3bebff;
+    float: right;
+    text-align: right;
+}
+
+.message p{
+    margin: 5px 0;
+}
+
+.date{
+    color: #777777;
+    font-size: 12px;
+}
+
+.inputChat{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0 0 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #cccccc;
+}
+
+input[type=text]:focus{
+    border: 1px solid #aaaaaa;
+}
+
+#nameModal{
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+
+
+
+/* The Modal (background) */
+.modal-custom {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content-custom {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close-custom {
+
+    position: absolute;
+    right: 1rem !important;
+    top: 0.7%;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    
+  }
+  
+  .close-custom:hover,
+  .close-custom:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header-custom {
+    padding: 15px 20px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body-custom {padding: 20px 0px;}
+
+
+
+.btn-editarMiServicio {
+    background-color: #407aee !important;
+    border-color: #407aee !important;
+}
+.btn-editarMiServicio:hover {
+    background-color: #376bd8 !important;
+    border-color: #376bd8 !important;
+
+}
+
+.btn-editarServicio {
+    background-color: #407aee !important;
+    border-color: #407aee !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    margin-right: 4px !important;
+    line-height: 1.8 !important;
+}
+.btn-editarServicio:hover {
+    background-color: #376bd8 !important;
+    border-color: #376bd8 !important;
+
+}
+
+.btn-editarServicioDanger {
+    background-color: #f44455 !important;
+    border-color: #f44455 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    margin-left: 4px !important;
+    line-height: 1.8 !important;
+}
+.btn-editarServicioDanger:hover {
+    background-color: #f22034 !important;
+    border-color: #f22034 !important;
+
+}
+
+
+
+.page-item.active .page-link{
+    background-color: #407aee !important;
+    border-color: #407aee !important;
+}
+
+.nav-icon:hover{
+    color: #407aee !important;
+}
+
+.nav-item .indicator{
+    background: #407aee !important;
+}
+
+.sidebar-toggle:hover .hamburger{
+    background: #407aee !important;
+}
+.sidebar-toggle:hover .hamburger:before{
+    background: #407aee !important;
+}
+.sidebar-toggle:hover .hamburger:after{
+    background: #407aee !important;
+}
+
+.linkTable{
+    color: #407aee !important;
+}
+.linkTable:hover{
+    color: #376bd8 !important;;
+}
+
+.accionesTD{
+    min-width: 100px !important;
+    text-align: center !important;
+}
+
+.p0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 80px !important;
+
+}
+
+.grid-dashboard{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.dateRange {
+    padding: 6px 10px 0 10px;
+}
+
+.map {
+    width: 400px;
+    height: 400px;
+  }
