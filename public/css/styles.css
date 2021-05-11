@@ -393,6 +393,18 @@ input[type=text]:focus{
 }
 
 .map {
-    width: 400px;
+    width: 100%;
     height: 400px;
   }
+
+  .paddTop50{
+      padding-top: 50px;
+  }
+
+#mapUser2{
+    padding-top: 0px !important;
+}
+
+#mapUser3{
+    padding-top: 0px !important;
+}

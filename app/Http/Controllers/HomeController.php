@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Pusher\Pusher;
 use DB;
 use Auth;
+use App\Events\UpdateLiveLocation;
 Use Carbon\Carbon;
 
 class HomeController extends Controller
@@ -378,25 +379,26 @@ class HomeController extends Controller
         $myId = Auth::user()->id;
         $long = $request->long;
         $lat = $request->lat;
-
         $data = User::find($myId);
         $data->long = $long;
         $data->lat = $lat;
         $data->save();   
-        
-        $options = array(
-            'cluster' => 'us3'
-        );
+        event(new UpdateLiveLocation($long,$lat,$myId));
 
-        $pusher = new Pusher(
-            env('PUSHER_APP_KEY'),
-            env('PUSHER_APP_SECRET'),
-            env('PUSHER_APP_ID'),
-            $options
-        );
 
-        $data = ['long' => $long, 'lat' => $lat];
-        $pusher->trigger('my-channel2', 'my-event2', $data);
+        // $options = array(
+        //     'cluster' => 'ap2'
+        // );
+
+        // $pusher = new Pusher(
+        //     env('PUSHER_APP_KEY'),
+        //     env('PUSHER_APP_SECRET'),
+        //     env('PUSHER_APP_ID'),
+        //     $options
+        // );
+
+        // $data = ['long' => $long, 'lat' => $lat];
+        // $pusher->trigger('my-channel2', 'my-event2', $data);
     }
 
 

